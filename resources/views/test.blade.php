@@ -10,5 +10,6 @@
   </head>
   <body>
       <h1>You have reached the test page!</h1>
+      <p>Welcome {{ $name }}</p>
   </body>
 </html>
