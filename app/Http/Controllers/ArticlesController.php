@@ -29,8 +29,22 @@ class ArticlesController extends Controller
     //Renders a page to persist articles from the create form.
     public function store(){
 
+        //Validation rules
+        request()->validate([
+            'title' => 'required | min:3 | max:255',
+            'excerpt' => 'required',
+            'body' => 'required',
+        ]);
 
+        $article = new Article();
 
+        $article->title = request('title');
+        $article->excerpt = request('excerpt');
+        $article->body = request('body');
+
+        $article->save();
+
+        return redirect('/articles');
 
     }
 
@@ -43,6 +57,13 @@ class ArticlesController extends Controller
     //Persists an edit to an article
     public function update($id){
 
+        //Validation rules
+        request()->validate([
+            'title' => 'required | min:3 | max:255',
+            'excerpt' => 'required',
+            'body' => 'required',
+        ]);
+
         $article = Article::find($id);
 
         $article->title = request('title');
@@ -51,8 +72,6 @@ class ArticlesController extends Controller
         $article->save();
 
         return redirect('/articles/' . $article->id);
-
-
     }
 
     // destroy an article
