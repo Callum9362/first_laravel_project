@@ -29,22 +29,8 @@ class ArticlesController extends Controller
     public function store(){
 
         //Validation rules
-        request()->validate([
-            'title' => 'required | min:3 | max:255',
-            'excerpt' => 'required',
-            'body' => 'required',
-        ]);
-
-        $article = new Article();
-
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-
-        $article->save();
-
+        Article::create($this->validateArticle());
         return redirect('/articles');
-
     }
 
     //Renders a page to edit articles
@@ -56,22 +42,24 @@ class ArticlesController extends Controller
     public function update(Article $article){
 
         //Validation rules
-        request()->validate([
-            'title' => 'required | min:3 | max:255',
-            'excerpt' => 'required',
-            'body' => 'required',
-        ]);
-
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-        $article->save();
-
+        $article->update($this->validateArticle());
         return redirect('/articles/' . $article->id);
     }
 
     // destroy an article
     public function destroy(){
 
+    }
+
+    /**
+     * @return array
+     */
+    protected function validateArticle(): array
+    {
+        return request()->validate([
+            'title' => 'required | min:3 | max:255',
+            'excerpt' => 'required',
+            'body' => 'required',
+        ]);
     }
 }

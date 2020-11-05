@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="446a73c1-cd40-4e50-be62-a3bd81ff04b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +141,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -157,7 +164,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604608989876</updated>
-      <workItem from="1604608991682" duration="1403000" />
+      <workItem from="1604608991682" duration="2514000" />
     </task>
     <servers />
   </component>
@@ -173,6 +180,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="92" y="58" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1604610143013" />
+    <state x="203" y="173" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1604611663979">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="203" y="173" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1536.824@0.0.1536.824" timestamp="1604611663979" />
     <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1604609033608">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -189,9 +200,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604609033608" />
-    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604610475117">
+    <state x="200" y="349" key="ReplaceDuplicatesPrompt" timestamp="1604611672654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604610475117" />
+    <state x="200" y="349" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1604611672654" />
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604611224701">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604611224701" />
   </component>
 </project>
