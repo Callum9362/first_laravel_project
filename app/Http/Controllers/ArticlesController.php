@@ -9,8 +9,7 @@ class ArticlesController extends Controller
 {
 
     //Renders a particular article
-    public function show($id){
-        $article = Article::find($id);
+    public function show(Article $article){
         return view('articles.show', ['article' => $article]);
     }
 
@@ -49,13 +48,12 @@ class ArticlesController extends Controller
     }
 
     //Renders a page to edit articles
-    public function edit($id){
-        $article = Article::find($id);
+    public function edit(Article $article){
         return view('articles.edit', compact('article'));
     }
 
     //Persists an edit to an article
-    public function update($id){
+    public function update(Article $article){
 
         //Validation rules
         request()->validate([
@@ -63,8 +61,6 @@ class ArticlesController extends Controller
             'excerpt' => 'required',
             'body' => 'required',
         ]);
-
-        $article = Article::find($id);
 
         $article->title = request('title');
         $article->excerpt = request('excerpt');
