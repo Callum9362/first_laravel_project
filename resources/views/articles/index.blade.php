@@ -8,7 +8,7 @@
 
          <div class="content">
              <h2>
-              <a href="/articles/{{ $article->id }}">
+              <a href="{{ $article->path()}}">
                 {{ $article->title }}
               </a>
              </h2>

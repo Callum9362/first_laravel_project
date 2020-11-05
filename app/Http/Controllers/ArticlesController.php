@@ -43,7 +43,7 @@ class ArticlesController extends Controller
 
         //Validation rules
         $article->update($this->validateArticle());
-        return redirect('/articles/' . $article->id);
+        return redirect($article->path());
     }
 
     // destroy an article
