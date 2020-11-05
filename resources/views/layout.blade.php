@@ -10,6 +10,7 @@
 <link href="/css/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
+@yield('head')
 
 </head>
 <body>
