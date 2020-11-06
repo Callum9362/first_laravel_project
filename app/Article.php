@@ -12,7 +12,11 @@ class Article extends Model
         return route('articles.show', $this);
     }
 
-    public function user(){
-        //TODO
+    public function author (){
+        return $this->belongsTo(User::class, 'user-id');
+    }
+
+    public function tags(){
+        return $this->belongsToMany(Tag::class);
     }
 }
